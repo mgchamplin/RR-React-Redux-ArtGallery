@@ -16,13 +16,14 @@ export const dataSlice = createSlice({
             return initialState
         },
         inputId: (state, action) => {
-            return { ...state, objectId: action.payload }
+            console.log("Input ID: " + action.payload)
+            return { state, objectId: action.payload }
         },
         incrementId: (state) => {
-            return { ...state, objectId: state.objectId + 2 }
+            return { state, objectId: state.objectId + 1 }
         },
         decrementId: (state) => {
-            return { ...state, objectId: state.objectId - 2 }
+            return { state, objectId: state.objectId - 1 }
         }
     }
 })
