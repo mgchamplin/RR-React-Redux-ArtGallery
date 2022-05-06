@@ -24,7 +24,7 @@ function App() {
         <button onClick={() => dispatch(decrementId())}>Back</button>
       </div>
       <input value={ data.objectId } onChange={(e) => {
-        dispatch(inputId(Number(e.target.value)))
+                               dispatch(inputId(Number(e.target.value)))
       }} />
       <div>
         {data.objectId}

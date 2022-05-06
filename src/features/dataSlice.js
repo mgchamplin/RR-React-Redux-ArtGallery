@@ -19,10 +19,10 @@ export const dataSlice = createSlice({
             return { ...state, objectId: action.payload }
         },
         incrementId: (state) => {
-            return { ...state, objectId: state.objectId + 1 }
+            return { ...state, objectId: state.objectId + 2 }
         },
         decrementId: (state) => {
-            return { ...state, objectId: state.objectId - 1 }
+            return { ...state, objectId: state.objectId - 2 }
         }
     }
 })
